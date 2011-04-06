@@ -1,0 +1,114 @@
+/*----------------------------------------------------
+ * Globals
+ *----------------------------------------------------
+
+
+/*----------------------------------------------------
+ * Mixins
+ *----------------------------------------------------
+
+@mixin rounded($radius: 5px)
+  -moz-border-radius: $radius
+  -khtml-border-radius: $radius
+  -webkit-border-radius: $radius
+  border-radius: $radius
+
+@mixin rounded_bottom($radius: 5px)
+  -moz-border-radius-bottomleft: $radius
+  -khtml-border-radius-bottomleft: $radius
+  -webkit-border-bottom-left-radius: $radius
+  border-radius-bottomleft: $radius
+  -moz-border-radius-bottomright: $radius
+  -khtml-border-radius-bottomright: $radius
+  -webkit-border-bottom-right-radius: $radius
+  border-radius-bottomright: $radius
+
+
+@mixin shadow($color, $x: 0, $y: 0px, $width: 10px)
+  -moz-box-shadow: $x $y $width $color
+  -webkit-box-shadow: $x $y $width $color
+  box-shadow: $x $y $width $color
+
+@mixin gradient-background($image_path)
+  background-image: url($image_path)
+  background-repeat: repeat-x 
+
+
+/*----------------------------------------------------
+ * Header
+ *----------------------------------------------------
+.container_header 
+  background-color: #020d15
+
+.header
+  padding: 15px 0px 10px
+  overflow: hidden
+  width: 980px
+  margin: 0 auto
+
+  h1
+    margin: 0 0 0 25px
+    float: left
+
+.tag_line
+  font-size: 11px
+  color: #fff
+  display: block
+  font-style: normal
+  margin: -12px
+  position: relative
+  text-align: right
+
+
+.header
+  nav.utility
+    float: right
+    line-height: 1em
+    .hello
+      font-size: 10px
+      float: right
+      clear: left
+      line-height: 100%
+      color: #888
+
+/*----------------------------------------------------
+ * Footer
+ *----------------------------------------------------
+
+
+.footer, .push
+  height: 18em
+
+.footer
+  margin: 0 0 0 0
+  background-color: #020d15
+  padding: 0px 0 0 0
+  clear: both
+  overflow: hidden
+
+  nav.utility
+    text-align: center
+    margin: 0
+    li
+      float: none
+      display: inline
+      margin: 0 10px 0 0
+
+    a
+      color: #fff
+      font-weight: bold
+      font-size: 12px
+
+.container_footer
+  overflow: hidden
+  width: 940px 
+  margin: 0 auto
+  padding: 20px 0
+
+.copyright
+  padding: 15px
+  color: #ccc
+  font-size: 10px
+  line-height: 1.4em
+  text-align: center
+

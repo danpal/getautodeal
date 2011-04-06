@@ -1,0 +1,76 @@
+/*----------------------------------------------------
+ * Globals
+ *---------------------------------------------------- */
+/*----------------------------------------------------
+ * Mixins
+ *---------------------------------------------------- */
+/*----------------------------------------------------
+ * Header
+ *---------------------------------------------------- */
+.container_header {
+  background-color: #020d15; }
+
+.header {
+  padding: 15px 0px 10px;
+  overflow: hidden;
+  width: 980px;
+  margin: 0 auto; }
+  .header h1 {
+    margin: 0 0 0 25px;
+    float: left; }
+
+.tag_line {
+  font-size: 11px;
+  color: white;
+  display: block;
+  font-style: normal;
+  margin: -12px;
+  position: relative;
+  text-align: right; }
+
+.header nav.utility {
+  float: right;
+  line-height: 1em; }
+  .header nav.utility .hello {
+    font-size: 10px;
+    float: right;
+    clear: left;
+    line-height: 100%;
+    color: #888888; }
+
+/*----------------------------------------------------
+ * Footer
+ *---------------------------------------------------- */
+.footer, .push {
+  height: 18em; }
+
+.footer {
+  margin: 0 0 0 0;
+  background-color: #020d15;
+  padding: 0px 0 0 0;
+  clear: both;
+  overflow: hidden; }
+  .footer nav.utility {
+    text-align: center;
+    margin: 0; }
+    .footer nav.utility li {
+      float: none;
+      display: inline;
+      margin: 0 10px 0 0; }
+    .footer nav.utility a {
+      color: white;
+      font-weight: bold;
+      font-size: 12px; }
+
+.container_footer {
+  overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.copyright {
+  padding: 15px;
+  color: #cccccc;
+  font-size: 10px;
+  line-height: 1.4em;
+  text-align: center; }
