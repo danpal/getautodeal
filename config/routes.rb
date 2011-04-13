@@ -1,7 +1,8 @@
 Getautodeal::Application.routes.draw do
 
-  resource :users, :except => [:index]
-  match '/index', :to => 'pages#index' 
+  resources :users, :except => [:index]
+  match '/index', :to => 'pages#index'
+  match '/page2', :to => 'pages#page2' 
   match '/contact_us', :to => 'pages#contact_us'
   match '/help', :to => 'pages#help'
   match '/faq', :to => 'pages#faq'

@@ -14,3 +14,6 @@
         = yield
     = render 'layouts/footer'
     = render "layouts/googleanalytics"
+    .debug
+      = debug(params) if Rails.env.development?
+

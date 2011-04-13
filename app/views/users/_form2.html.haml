@@ -7,21 +7,21 @@
         - @deposit.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label :zip_code
+    = f.label :name
     %br/
-    = f.text_field :zip_code
+    = f.text_field :name
   
   .field
-    = f.label :make
+    = f.label :email
     %br/
-    = f.text_field :make
+    = f.text_field :email
   
   .field
-    = f.label :model
+    = f.label :phone
     %br/
-    = f.text_field :model  
+    = f.text_field :phone  
   
   .actions
-    = submit_tag ('Get the best deal!'), :class => "button orange"
+    = submit_tag ('Finish'), :class => "button orange"
   
 

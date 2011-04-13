@@ -90,6 +90,8 @@
     .form_billboard .field input {
       width: 263px;
       margin: 5px 0px 5px 0; }
+    .form_billboard .field label {
+      font-weight: bold; }
 
 .button.orange {
   background: -moz-linear-gradient(center bottom, #df6b1d, #faa02e) repeat scroll 0 0 transparent;
