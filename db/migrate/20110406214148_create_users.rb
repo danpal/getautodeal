@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :model2
       t.string :make3
       t.string :model3
-
+      t.text   :description
       t.timestamps
     end
   end

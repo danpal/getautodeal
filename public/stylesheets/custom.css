@@ -93,6 +93,38 @@
     .form_billboard .field label {
       font-weight: bold; }
 
+#page2_h1 {
+  text-align: center; }
+
+.form2_billboard {
+  margin: 20px 120px;
+  background: none repeat scroll 0 0 white;
+  border: 3px solid #666666;
+  padding: 25px;
+  width: 640px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  .form2_billboard p {
+    text-align: center;
+    margin: 15px 0px 20px 0px; }
+  .form2_billboard h3 {
+    font-size: 22px;
+    text-align: center; }
+  .form2_billboard .field {
+    margin: 10px;
+    padding: 0px 0px 0px 103px; }
+    .form2_billboard .field input {
+      width: 400px;
+      margin: 5px 0px 5px 0; }
+    .form2_billboard .field label {
+      font-weight: bold; }
+  .form2_billboard .actions {
+    text-align: center; }
+  .form2_billboard #user_description {
+    width: 408px; }
+
 .button.orange {
   background: -moz-linear-gradient(center bottom, #df6b1d, #faa02e) repeat scroll 0 0 transparent;
   border-color: #de8511;
