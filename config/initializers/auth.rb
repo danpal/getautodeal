@@ -1,0 +1,4 @@
+USERNAME = ENV['USERNAME'] || "foo"
+PASSWORD = ENV['PASSWORD'] || "bar"
+AUTHENTICATE = ENV['REQUIRE_AUTH'] || "no"
+

@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+ 
+  before_filter :authenticate
+
   def index
     @user = User.new
   end
@@ -14,6 +17,15 @@ class PagesController < ApplicationController
   end
 
   def help
+  end
+  
+  def authenticate 
+    if AUTHENTICATE == "yes"
+      authenticate_or_request_with_http_basic do |username, password|
+        username == USERNAME && password == PASSWORD
+      end
+    end
+  
   end
 
 end
