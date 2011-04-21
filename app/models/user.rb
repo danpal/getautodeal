@@ -6,12 +6,13 @@ class User < ActiveRecord::Base
                   :description
 
 
-  validates  :zip_code, :presence => true, :on => :create
+  validates  :zip_code, :presence => true, :format => {:with => /^\d{5}(-?\d{4})?$/}, :on => :create
   validates  :make, :presence => true, :on => :create
   validates  :model, :presence => true, :on => :create
 
-  validates :name, :presence => true, :on => :update
-  validates :email, :presence => true, :on => :update
+  #the second form is where this values are asked for
+  validates :name,  :presence => true, :on => :update
+  validates :email, :presence => true, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}, :on => :update 
   validates :phone, :presence => true, :on => :update
   
 end

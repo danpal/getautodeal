@@ -16,13 +16,15 @@
   width: 960px; }
 
 .logo {
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 10px;
+  padding: 0 0 0 345px; }
 
 .tag_line {
-  font-size: 16px;
-  color: #aaaaaa;
+  font-size: 18px;
+  color: #888888;
   font-style: italic;
   margin: -28px 0px 0px 16px;
+  padding: 0 0 0 314px;
   width: 960px;
   display: block; }
 
@@ -87,7 +89,8 @@
   border-radius: 3px; }
   .form_billboard h3 {
     font-size: 22px;
-    text-align: center; }
+    text-align: center;
+    color: #cc0000; }
   .form_billboard .field {
     margin: 10px; }
     .form_billboard .field input {
@@ -170,6 +173,19 @@
     margin: 0;
     color: #222222;
     text-align: center; }
+
+/*----------------------------------------------------
+ *page 3
+ *---------------------------------------------------- */
+/*----------------------------------------------------
+ *FAQ
+ *---------------------------------------------------- */
+.faq_list dt {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px; }
+.faq_list dd {
+  margin: 0 50px 10px; }
 
 /*----------------------------------------------------
  *Error messages

@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      redirect_to page3_path, :notice => "Thank you"
+      redirect_to page3_path, :notice => "You are done !"
     else
       render 'pages/page2'
     end
