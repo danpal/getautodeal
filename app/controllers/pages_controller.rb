@@ -19,7 +19,8 @@ class PagesController < ApplicationController
   def help
   end
   
-  def authenticate 
+  def authenticate
+    puts AUTHENTICATE 
     if AUTHENTICATE == "yes"
       authenticate_or_request_with_http_basic do |username, password|
         username == USERNAME && password == PASSWORD
