@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     if @user.update_attributes(params[:user])
       redirect_to page3_path, :notice => "Thank you"
     else
-      redirect_to 'pages/page2'
+      render 'pages/page2'
     end
 
   end

@@ -206,10 +206,65 @@
     margin: 0
     color: #222222
     text-align: center
-    
-    
-.push
-  margin: 20px 0px 10px 0px
+
+
+/*----------------------------------------------------
+ *Error messages
+ *----------------------------------------------------
+
+#error_explanation
+  border: 2px solid red
+  padding: 5px
+  @include rounded(4px)
+  h2
+    color: red
+.field_with_errors
+  label
+    color: red !important
+
+ul li.errors
+  color: #cc0000
+  margin: 0.1em 0 0 5%
+  list-style: square
+
+.error, .alert, .notice, .success, .info
+  padding: 0.8em
+  margin-bottom: 1em
+  border: 2px solid #ddd
+
+.error, .alert
+  background: #fbe3e4
+  color: #8a1f11
+  border-color: #fbc2c4
+
+.notice
+  background: #fff6bf
+  color: #514721
+  border-color: #ffd324
+
+.success
+  background: #e6efc2
+  color: #264409
+  border-color: #c6d880
+
+.info
+  background: #d5edf8
+  color: #205791
+  border-color: #92cae4
+
+.error a, .alert a
+  color: #8a1f11
+
+.notice a
+  color: #514721
+
+.success a
+  color: #264409
+
+.info a
+  color: #205791
+
+
 /*----------------------------------------------------
  * Footer
  *----------------------------------------------------
