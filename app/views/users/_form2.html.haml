@@ -4,14 +4,13 @@
       %h2
         = pluralize(@user.errors.count, "error")
       %ul
-        - @deposit.errors.full_messages.each do |msg|
-          %li= msg
-  
+        - @user.errors.full_messages.each do |msg|
+          %li= msg 
   %p
     %strong If you have more than 1 option please tell us
 
     .field
-      = f.label :make
+      = f.label "Make 2nd choice"
       %br/
       = f.text_field :make2
     
@@ -22,7 +21,7 @@
 
       
     .field
-      = f.label :make
+      = f.label "Make 3rd choice"
       %br/
       = f.text_field :make3
     
@@ -32,8 +31,7 @@
       = f.text_field :model3  
   
   %p 
-    %strong Please describe your car, be as specific as possible. What colors would you consider, what accesories you'd like, the more information we have the better we can serve you
-
+    %strong Packages, Options and Accesories
     .field
       = f.label :description
       %br/
@@ -44,17 +42,14 @@
     %strong Your Information (Kept private)
   .field
     = f.label :name
-    %br/
     = f.text_field :name
   
   .field
     = f.label :email
-    %br/
     = f.text_field :email
   
   .field
     = f.label :phone
-    %br/
     = f.text_field :phone  
   
   .actions

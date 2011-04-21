@@ -33,7 +33,7 @@
   width: 960px;
   background-color: white;
   height: auto !important;
-  margin: 0 auto -18em;
+  #margin: 0 auto -18em;
   min-height: 100%; }
 
 .statement h1 {
@@ -71,6 +71,9 @@
     margin: 0 0 0 36px;
     font-size: 14px; }
 
+.registration {
+  height: 25em; }
+
 .form_billboard {
   margin: 0px 60px;
   background: none repeat scroll 0 0 white;
@@ -91,7 +94,8 @@
       width: 263px;
       margin: 5px 0px 5px 0; }
     .form_billboard .field label {
-      font-weight: bold; }
+      font-weight: bold;
+      color: #333333; }
 
 #page2_h1 {
   text-align: center; }
@@ -108,7 +112,9 @@
   border-radius: 3px; }
   .form2_billboard p {
     text-align: center;
-    margin: 15px 0px 20px 0px; }
+    margin: 15px 0px 20px 0px;
+    color: #376d00;
+    font-size: 24px; }
   .form2_billboard h3 {
     font-size: 22px;
     text-align: center; }
@@ -119,7 +125,8 @@
       width: 400px;
       margin: 5px 0px 5px 0; }
     .form2_billboard .field label {
-      font-weight: bold; }
+      font-weight: bold;
+      color: #333333; }
   .form2_billboard .actions {
     text-align: center; }
   .form2_billboard #user_description {
@@ -165,23 +172,25 @@
     text-align: center; }
 
 .push {
-  margin: 40px 0px 10px 0px; }
+  margin: 20px 0px 10px 0px; }
 
 /*----------------------------------------------------
  * Footer
  *---------------------------------------------------- */
-.footer, .push {
-  height: 55em; }
+.footer {
+  height: 25em; }
 
 .footer {
   background-color: #262626;
-  margin: 80px 0 0 0;
+  margin: 100px 0 0 0;
   padding: 0px 0 0 0;
   clear: both;
   overflow: hidden; }
   .footer nav.utility {
     text-align: center;
     margin: 0; }
+    .footer nav.utility ul {
+      padding: 0; }
     .footer nav.utility li {
       float: none;
       display: inline;
@@ -193,8 +202,8 @@
 
 .container_footer {
   overflow: hidden;
-  width: 940px;
-  margin: 0 auto;
+  width: 960px;
+  #margin: 0 auto;
   padding: 20px 0; }
 
 .copyright {
