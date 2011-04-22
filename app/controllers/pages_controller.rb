@@ -7,9 +7,11 @@ class PagesController < ApplicationController
   end
   
   def page2()
-    #user = User.find(id)
   end
   
+  def page3()
+  end
+
   def faq
   end
 

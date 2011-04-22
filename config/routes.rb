@@ -1,13 +1,12 @@
 Getautodeal::Application.routes.draw do
 
-  resources :users, :except => [:index, :show, :edit]
+  resources :users, :except => [:edit]
   match '/index', :to => 'pages#index'
   match '/page2', :to => 'pages#page2' 
   match '/page3', :to => 'pages#page3' 
   match '/contact_us', :to => 'pages#contact_us'
   match '/help', :to => 'pages#help'
   match '/faq', :to => 'pages#faq'
-
 
   root :to => "pages#index"
   # The priority is based upon order of creation:
