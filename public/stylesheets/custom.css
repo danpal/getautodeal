@@ -38,6 +38,9 @@
   #margin: 0 auto -18em;
   min-height: 100%; }
 
+.content {
+  padding: 10px 20px 20px 20px; }
+
 .statement h1 {
   font-family: "minion-pro-1", "minion-pro-2", "Times New Roman", Georgia, serif;
   font-size: 56px;
@@ -77,7 +80,7 @@
   height: 25em; }
 
 .form_billboard {
-  margin: 0px 60px;
+  margin: 0px 15px;
   background: none repeat scroll 0 0 white;
   border: 8px solid #666666;
   padding: 25px;
