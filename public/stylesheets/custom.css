@@ -93,11 +93,11 @@
     text-align: center; }
 
 .form_billboard {
-  margin: 0px 15px;
+  margin: 0px 0px;
   background: none repeat scroll 0 0 white;
   border: 8px solid #666666;
   padding: 25px;
-  width: 300px;
+  width: 310px;
   float: right;
   -moz-border-radius: 3px;
   -khtml-border-radius: 3px;
@@ -197,7 +197,8 @@
     font-style: italic;
     font-weight: 500;
     margin: 35px 0 10px;
-    font-family: minion-pro-1, minion-pro-2, Times New Roman, Georgia, serif;
+    font-family: minion-pro-1, minion-pro-2, Times New Roman, Georgia, serif; }
+  .quotes p {
     font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     font-size: 12px;
     margin: 0;
