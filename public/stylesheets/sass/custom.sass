@@ -2,7 +2,8 @@
  * Globals
  *----------------------------------------------------
 
-
+$other-font= 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+$h1-font= "minion-pro-1","minion-pro-2","Times New Roman",Georgia,serif
 /*----------------------------------------------------
  * Mixins
  *----------------------------------------------------
@@ -75,7 +76,7 @@
 
 .statement 
   h1
-    font-family: "minion-pro-1","minion-pro-2","Times New Roman",Georgia,serif
+    font-family: $h1-font
     font-size: 56px
     font-weight: normal
     letter-spacing: -1px
@@ -103,12 +104,12 @@
     
   h4
     color: #CC0000
-    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+    font-family: $other-font
     font-size: 16px
     margin: 5px 0
 
   p
-    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+    font-family: $other-font
     margin: 0 0 0 36px
     font-size: 14px
 
@@ -122,11 +123,11 @@
 
   p
     font-size: 13px
-    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+    font-family: $other-font
     margin: 0 0 -16px 0
     padding: 0 0 0 107px
   h3
-    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+    font-family: $other-font
     font-size: 18px
     text-align: center
 
@@ -205,7 +206,7 @@
   text-align: center
   border-style: solid
   border-width: 1px
-  font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+  font-family: $other-font
   font-size: 23px
   font-weight: bold
   height: 47px
@@ -239,9 +240,10 @@
     font-style: italic
     font-weight: 500
     margin: 35px 0 10px
-    font-family: "minion-pro-1","minion-pro-2","Times New Roman",Georgia,serif
-  p
-    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif
+    font-family: $h1-font
+    
+    p
+    font-family: $other-font
     font-size: 12px
     margin: 0
     color: #222222
@@ -254,6 +256,25 @@
 /*----------------------------------------------------
  *page 3
  *----------------------------------------------------
+.share
+  border: 3px solid #ccc
+  margin: 20px 0 0 200px
+  text-align: center
+  width: 500px
+  @include rounded(6px)
+  h2
+    font-family: $other-font
+    margin-bottom: -12px
+    font-size: 32px
+    color: #3b5998   
+  p
+    font-size: 16px
+  
+  img
+    padding: 5px
+    margin-right: 20px
+
+
 #thank_you_note
   p
     

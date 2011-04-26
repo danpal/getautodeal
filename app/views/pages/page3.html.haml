@@ -1,3 +1,15 @@
+.statement
+  %h1 You are done !
+
 #thank_you_note
   %p Thank you for the information, we will match other buyers in your area and will send you quotes from local dealers in the next few days.
-    
+
+.share
+  %h2 Share Us
+  %p The more people buying cars in your area the better price you get!
+  =link_to image_tag("facebook.png", :alt => "share on facebook"),
+                     "http://www.facebook.com/share.php?u=http://localcar.co",
+                      :target => "_blank"
+  =link_to image_tag("twitter.png", :alt => "share on facebook"), 
+                     "https://twitter.com/intent/tweet?text=Let's buy a car together using www.localcar.co the more people the better price we get !",
+                     :target => "_blank"     

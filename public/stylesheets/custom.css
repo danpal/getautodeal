@@ -42,7 +42,7 @@
   padding: 10px 20px 20px 20px; }
 
 .statement h1 {
-  font-family: "minion-pro-1", "minion-pro-2", "Times New Roman", Georgia, serif;
+  font-family: minion-pro-1, minion-pro-2, Times New Roman, Georgia, serif;
   font-size: 56px;
   font-weight: normal;
   letter-spacing: -1px;
@@ -68,11 +68,11 @@
     margin: 5px 7px 0 0; }
   .column h4 {
     color: #cc0000;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     font-size: 16px;
     margin: 5px 0; }
   .column p {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     margin: 0 0 0 36px;
     font-size: 14px; }
 
@@ -84,11 +84,11 @@
   padding: 0 0 0 540px; }
   .ceo_message p {
     font-size: 13px;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     margin: 0 0 -16px 0;
     padding: 0 0 0 107px; }
   .ceo_message h3 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     font-size: 18px;
     text-align: center; }
 
@@ -164,7 +164,7 @@
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
   font-size: 23px;
   font-weight: bold;
   height: 47px;
@@ -197,9 +197,8 @@
     font-style: italic;
     font-weight: 500;
     margin: 35px 0 10px;
-    font-family: "minion-pro-1", "minion-pro-2", "Times New Roman", Georgia, serif; }
-  .quotes p {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: minion-pro-1, minion-pro-2, Times New Roman, Georgia, serif;
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
     font-size: 12px;
     margin: 0;
     color: #222222;
@@ -208,6 +207,26 @@
 /*----------------------------------------------------
  *page 3
  *---------------------------------------------------- */
+.share {
+  border: 3px solid #cccccc;
+  margin: 20px 0 0 200px;
+  text-align: center;
+  width: 500px;
+  -moz-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+  .share h2 {
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+    margin-bottom: -12px;
+    font-size: 32px;
+    color: #3b5998; }
+  .share p {
+    font-size: 16px; }
+  .share img {
+    padding: 5px;
+    margin-right: 20px; }
+
 /*----------------------------------------------------
  *FAQ
  *---------------------------------------------------- */
