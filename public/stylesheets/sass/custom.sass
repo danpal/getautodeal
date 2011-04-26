@@ -193,9 +193,13 @@
     width: 408px
 
 .button.orange
+  background: #faa02e
   background: -moz-linear-gradient(center bottom, #df6b1d, #faa02e) repeat scroll 0 0 transparent
+  background: -webkit-gradient(linear, left bottom, left top, from(#df6b1d), to(#faa02e))
   border-color: #DE8511
-  box-shadow: 1px 1px 0 #FAC76E inset
+  box-shadow: inset 1px 1px 0px #FAC76E
+  -moz-box-shadow: inset 1px 1px 0px #FAC76E
+  -webkit-box-shadow: inset 1px 1px 0px #FAC76E
   color: #FFFFFF
   text-shadow: 0 -1px 1px #BDA07C
   text-align: center
@@ -209,6 +213,21 @@
   margin: 13px 0px 0px 25px
   @include rounded(3px)
   width: 252px
+
+
+.button.orange:hover
+  background: #dd7e3e !important
+  background: -moz-linear-gradient(bottom, #dd7e3e, #f9a53b) !important
+  background: -webkit-gradient(linear, left bottom, left top, from(#dd7e3e), to(#f9a53b)) !important
+  cursor: pointer
+
+.button.orange:active
+  background: #f9a53b !important
+  background: -moz-linear-gradient(top, #dd7e3e, #f9a53b) !important
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd7e3e), to(#f9a53b)) !important
+
+
+
 
 .quotes
   float: left
@@ -260,10 +279,12 @@
 
 #error_explanation
   border: 2px solid red
-  padding: 5px
   @include rounded(4px)
   h2
     color: red
+    margin-top: 8px
+    padding-left: 10px
+
 .field_with_errors
   label
     color: red !important

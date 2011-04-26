@@ -152,9 +152,13 @@
     width: 408px; }
 
 .button.orange {
+  background: #faa02e;
   background: -moz-linear-gradient(center bottom, #df6b1d, #faa02e) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#df6b1d), to(#faa02e));
   border-color: #de8511;
-  box-shadow: 1px 1px 0 #fac76e inset;
+  box-shadow: inset 1px 1px 0px #fac76e;
+  -moz-box-shadow: inset 1px 1px 0px #fac76e;
+  -webkit-box-shadow: inset 1px 1px 0px #fac76e;
   color: white;
   text-shadow: 0 -1px 1px #bda07c;
   text-align: center;
@@ -171,6 +175,17 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   width: 252px; }
+
+.button.orange:hover {
+  background: #dd7e3e !important;
+  background: -moz-linear-gradient(bottom, #dd7e3e, #f9a53b) !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dd7e3e), to(#f9a53b)) !important;
+  cursor: pointer; }
+
+.button.orange:active {
+  background: #f9a53b !important;
+  background: -moz-linear-gradient(top, #dd7e3e, #f9a53b) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd7e3e), to(#f9a53b)) !important; }
 
 .quotes {
   float: left;
@@ -208,13 +223,14 @@
  *---------------------------------------------------- */
 #error_explanation {
   border: 2px solid red;
-  padding: 5px;
   -moz-border-radius: 4px;
   -khtml-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
   #error_explanation h2 {
-    color: red; }
+    color: red;
+    margin-top: 8px;
+    padding-left: 10px; }
 
 .field_with_errors label {
   color: red !important; }
